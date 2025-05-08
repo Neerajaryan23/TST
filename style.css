@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+    position: relative;
+  }
+  
+  .wrapper {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .input-field {
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #4a90e2;
+  }
+  
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .typing-text p {
+    font-size: 24px;
+    color: #333;
+    line-height: 1.6;
+    background:olivedrab;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 120px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .result-detial {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .result-detial li {
+    background: whitesmoke;
+    padding: 12px 20px;
+    border-radius: 10px;
+    flex: 1 1 45%;
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  .result-detial p {
+    color: seagreen;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .result-detial span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-self: center;
+    min-width: 150px;
+  }
+  
+  button:hover {
+    background: #357abd;
+  }
+  
+
+.typing-text p span {
+    position: relative;
+}
+.typing-text p span.active {
+    color: orange;
+}
+
+.typing-text p span.correct{
+    color: green;
+}
+.typing-text p span.incorrect{
+    color: red;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+}
+
+::selection{
+    color: #fff;
+    background: orange;
+}
+
