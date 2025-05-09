@@ -1,5 +1,5 @@
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     .wrapper {
       padding: 20px 25px;
     }
@@ -12,7 +12,7 @@
     .typing-text p {
       font-size: 16px;
       padding: 12px;
-      min-height: 100px;
+      min-height: 200px;
     }
   
     .result-detial {
